@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-size: 11px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #4A90E2;
+    border-radius: 3px;
+    transition: .2s;
+    border: none;
+    padding: 8px 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2C72C5;
+}
+
+input {
+    padding: 11px 12px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #313F5A;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    border: 1px solid #E1E6F2;
+    border-radius: 3px;
+}
+
+.create-task-form > *,
+.filter-task-block > *{
+    margin-bottom: 12px;
+}
+
+.create-task-form *,
+.filter-task-block *{
+    width: 400px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.task.hidden {
+    display: none;
+}
+
+.remove-task {
+    margin-left: 4px;
+    position: relative;
+    color: #EF5350;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    width: max-content;
+}
+
+.remove-task::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    border: 2px solid #EF5350;
+    width: 12px;
+    height: 12px;
+}
